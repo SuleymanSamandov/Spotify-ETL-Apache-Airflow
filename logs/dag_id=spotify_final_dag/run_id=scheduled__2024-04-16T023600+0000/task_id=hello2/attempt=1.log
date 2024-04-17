@@ -1,0 +1,58 @@
+[2024-04-16T09:39:35.791+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-04-16T09:39:35.821+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: spotify_final_dag.hello2 scheduled__2024-04-16T02:36:00+00:00 [queued]>
+[2024-04-16T09:39:35.838+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: spotify_final_dag.hello2 scheduled__2024-04-16T02:36:00+00:00 [queued]>
+[2024-04-16T09:39:35.840+0000] {taskinstance.py:2303} INFO - Starting attempt 1 of 2
+[2024-04-16T09:39:35.861+0000] {taskinstance.py:2327} INFO - Executing <Task(PythonOperator): hello2> on 2024-04-16 02:36:00+00:00
+[2024-04-16T09:39:35.875+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=2129) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-04-16T09:39:35.880+0000] {standard_task_runner.py:63} INFO - Started process 2164 to run task
+[2024-04-16T09:39:35.888+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'spotify_final_dag', 'hello2', 'scheduled__2024-04-16T02:36:00+00:00', '--job-id', '440', '--raw', '--subdir', 'DAGS_FOLDER/dag.py', '--cfg-path', '/tmp/tmpaaz6f8dy']
+[2024-04-16T09:39:35.891+0000] {standard_task_runner.py:91} INFO - Job 440: Subtask hello2
+[2024-04-16T09:39:35.952+0000] {task_command.py:426} INFO - Running <TaskInstance: spotify_final_dag.hello2 scheduled__2024-04-16T02:36:00+00:00 [running]> on host 52651c1f9987
+[2024-04-16T09:39:36.126+0000] {taskinstance.py:2644} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='spotify_final_dag' AIRFLOW_CTX_TASK_ID='hello2' AIRFLOW_CTX_EXECUTION_DATE='2024-04-16T02:36:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-04-16T02:36:00+00:00'
+[2024-04-16T09:39:36.130+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-04-16T09:39:36.770+0000] {logging_mixin.py:188} INFO - Connection successful
+[2024-04-16T09:39:37.190+0000] {logging_mixin.py:188} INFO - Connection successful
+[2024-04-16T09:39:37.636+0000] {logging_mixin.py:188} INFO - Connection successful
+[2024-04-16T09:39:37.640+0000] {logging_mixin.py:188} INFO - Null Not Found
+[2024-04-16T09:39:37.642+0000] {logging_mixin.py:188} INFO - Null Not Found
+[2024-04-16T09:39:37.655+0000] {logging_mixin.py:188} INFO - Null Not Found
+[2024-04-16T09:39:37.656+0000] {logging_mixin.py:188} INFO - Null Not Found
+[2024-04-16T09:39:37.657+0000] {logging_mixin.py:188} INFO - Null Not Found
+[2024-04-16T09:39:37.658+0000] {logging_mixin.py:188} INFO - Null Not Found
+[2024-04-16T09:39:37.660+0000] {python.py:237} INFO - Done. Returned value was: None
+[2024-04-16T09:39:37.661+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-04-16T09:39:37.672+0000] {taskinstance.py:1205} INFO - Marking task as SUCCESS. dag_id=spotify_final_dag, task_id=hello2, execution_date=20240416T023600, start_date=20240416T093935, end_date=20240416T093937
+[2024-04-16T09:39:37.716+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-04-16T09:39:37.731+0000] {taskinstance.py:3482} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-04-16T09:39:37.733+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2024-04-16T09:47:30.465+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-04-16T09:47:30.484+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: spotify_final_dag.hello2 scheduled__2024-04-16T02:36:00+00:00 [queued]>
+[2024-04-16T09:47:30.491+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: spotify_final_dag.hello2 scheduled__2024-04-16T02:36:00+00:00 [queued]>
+[2024-04-16T09:47:30.491+0000] {taskinstance.py:2303} INFO - Starting attempt 1 of 2
+[2024-04-16T09:47:30.502+0000] {taskinstance.py:2327} INFO - Executing <Task(PythonOperator): hello2> on 2024-04-16 02:36:00+00:00
+[2024-04-16T09:47:30.510+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=4228) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-04-16T09:47:30.512+0000] {standard_task_runner.py:63} INFO - Started process 4237 to run task
+[2024-04-16T09:47:30.512+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'spotify_final_dag', 'hello2', 'scheduled__2024-04-16T02:36:00+00:00', '--job-id', '1104', '--raw', '--subdir', 'DAGS_FOLDER/dag.py', '--cfg-path', '/tmp/tmpvvsfqdb3']
+[2024-04-16T09:47:30.514+0000] {standard_task_runner.py:91} INFO - Job 1104: Subtask hello2
+[2024-04-16T09:47:30.556+0000] {task_command.py:426} INFO - Running <TaskInstance: spotify_final_dag.hello2 scheduled__2024-04-16T02:36:00+00:00 [running]> on host 52651c1f9987
+[2024-04-16T09:47:30.630+0000] {taskinstance.py:2644} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='spotify_final_dag' AIRFLOW_CTX_TASK_ID='hello2' AIRFLOW_CTX_EXECUTION_DATE='2024-04-16T02:36:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-04-16T02:36:00+00:00'
+[2024-04-16T09:47:30.631+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-04-16T09:47:31.054+0000] {logging_mixin.py:188} INFO - Connection successful
+[2024-04-16T09:47:31.473+0000] {logging_mixin.py:188} INFO - Connection successful
+[2024-04-16T09:47:31.884+0000] {logging_mixin.py:188} INFO - Connection successful
+[2024-04-16T09:47:31.887+0000] {logging_mixin.py:188} INFO - Null Not Found
+[2024-04-16T09:47:31.888+0000] {logging_mixin.py:188} INFO - Null Not Found
+[2024-04-16T09:47:31.896+0000] {logging_mixin.py:188} INFO - Null Not Found
+[2024-04-16T09:47:31.897+0000] {logging_mixin.py:188} INFO - Null Not Found
+[2024-04-16T09:47:31.898+0000] {logging_mixin.py:188} INFO - Null Not Found
+[2024-04-16T09:47:31.899+0000] {logging_mixin.py:188} INFO - Null Not Found
+[2024-04-16T09:47:31.900+0000] {python.py:237} INFO - Done. Returned value was: None
+[2024-04-16T09:47:31.901+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-04-16T09:47:31.907+0000] {taskinstance.py:1205} INFO - Marking task as SUCCESS. dag_id=spotify_final_dag, task_id=hello2, execution_date=20240416T023600, start_date=20240416T094730, end_date=20240416T094731
+[2024-04-16T09:47:31.932+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-04-16T09:47:31.942+0000] {taskinstance.py:3482} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-04-16T09:47:31.944+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
