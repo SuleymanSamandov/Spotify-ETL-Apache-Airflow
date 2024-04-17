@@ -1,5 +1,5 @@
 import pandas as pd
-from test import connection
+from connection import connection
 
 def get_album(data):
     album_id=[]

@@ -8,7 +8,7 @@ from airflow import DAG
 from airflow.operators.python import PythonOperator
 from datetime import datetime, timedelta
 import datetime
-from test import connection
+from connection import connection
 from get_data import processes
 
 
